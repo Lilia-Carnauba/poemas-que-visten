@@ -1,0 +1,93 @@
+/* =========================================================
+   VERSO — Design Tokens
+   Sistema de diseño: papel, tinta y encuadernación.
+   Referencia visual: Aesop (materialidad, restricción),
+   Muji (silencio, función), Apple (jerarquía, precisión).
+   ========================================================= */
+
+:root {
+  /* ---------- Color ---------- */
+  /* Papel: el fondo nunca es blanco puro ni el crema genérico de IA;
+     es un papel de edición, ligeramente frío. */
+  --color-paper: #FBFAF6;
+  --color-paper-dim: #F1EEE6;
+  --color-paper-deep: #E8E3D8;
+
+  /* Tinta: negros cálidos, nunca #000 puro. */
+  --color-ink: #1C1A17;
+  --color-ink-soft: #4A453D;
+  --color-mute: #8C8676;
+
+  --color-line: rgba(28, 26, 23, 0.12);
+  --color-line-strong: rgba(28, 26, 23, 0.24);
+
+  /* Verde encuadernación: el acento primario, evoca tela de libro,
+     no terracota ni verde ácido. */
+  --color-verde: #2F4538;
+  --color-verde-light: #4C6455;
+  --color-verde-pale: #E4E9E1;
+
+  /* Vino / lacre: acento secundario, uso deliberadamente escaso
+     (sellos de edición, estados agotados). */
+  --color-vino: #7A3B36;
+  --color-vino-pale: #F1E3E0;
+
+  --color-paper-rgb: 251, 250, 246;
+  --color-ink-rgb: 28, 26, 23;
+
+  /* ---------- Tipografía ---------- */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --text-hero: clamp(2.75rem, 2rem + 3.5vw, 5.75rem);
+  --text-h1: clamp(2.25rem, 1.75rem + 2.2vw, 3.5rem);
+  --text-h2: clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+  --text-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+  --text-body-lg: clamp(1.125rem, 1.05rem + 0.3vw, 1.375rem);
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-caption: 0.75rem;
+
+  --leading-tight: 1.05;
+  --leading-snug: 1.25;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.75;
+
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-wider: 0.14em;
+
+  /* ---------- Espaciado ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --space-section: clamp(4.5rem, 3.5rem + 5vw, 8.5rem);
+  --space-inline: clamp(1.25rem, 1rem + 2.2vw, 4rem);
+
+  /* ---------- Layout ---------- */
+  --content-max: 1240px;
+  --content-narrow: 760px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-seal: 50%;
+
+  /* ---------- Movimiento ---------- */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 180ms;
+  --duration-base: 340ms;
+  --duration-slow: 640ms;
+
+  /* ---------- Elevación ---------- */
+  --shadow-card: 0 1px 2px rgba(28, 26, 23, 0.05), 0 10px 28px rgba(28, 26, 23, 0.07);
+  --shadow-header: 0 1px 0 var(--color-line);
+}
